@@ -13,7 +13,7 @@ Karşılama Sayfası
 # Pardus Müzik Özellikleri
 | Pardus Müzik |
 | ------ | ------ |
-| Müzik(Parça) Detay |
-| Çalma Listesi Oluşturma |
-| Çalma Listesi Silme |
-| Otomatik İlerleme|
+| Müzik(Parça) Detay | |
+| Çalma Listesi Oluşturma | |
+| Çalma Listesi Silme | |
+| Otomatik İlerleme| |
