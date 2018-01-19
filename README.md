@@ -2,7 +2,7 @@
 ![N|Solid](https://github.com/nrkdrk/PardusMuzik/blob/master/img/nrkdrk.jpg)
 
 
-# PardusMuzik
+# Pardus Müzik Logosu
 ![alt text](https://github.com/nrkdrk/PardusMuzik/blob/master/img/icon.png)
 
 # PardusMuzik
