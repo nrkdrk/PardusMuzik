@@ -8,3 +8,12 @@
 # PardusMuzik
 Karşılama Sayfası
 ![alt text](https://github.com/nrkdrk/PardusMuzik/blob/master/img/PardusMuzik.PNG)
+
+
+# Pardus Müzik Özellikleri
+| Pardus Müzik |
+| ------ | ------ |
+| Müzik(Parça) Detay |
+| Çalma Listesi Oluşturma |
+| Çalma Listesi Silme |
+| Otomatik İlerleme|
