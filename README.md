@@ -7,4 +7,4 @@
 
 # PardusMuzik
 Karşılama Sayfası
-![alt text](https://github.com/nrkdrk/PardusMuzik/blob/master/img/PardusMuzik.png)
+![alt text](https://github.com/nrkdrk/PardusMuzik/blob/master/img/PardusMuzik.PNG)
