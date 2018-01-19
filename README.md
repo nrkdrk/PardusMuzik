@@ -1,6 +1,7 @@
 # PardusMuzik
 ![N|Solid](https://github.com/nrkdrk/PardusMuzik/blob/master/img/nrkdrk.jpg)
 
+Pardus Müzik Uygulaması Milli işletim sistemimiz olan Pardus için geliştirilmeye başlanmış açık kaynak kodlu bir projedir.
 
 # Pardus Müzik Logosu
 ![alt text](https://github.com/nrkdrk/PardusMuzik/blob/master/img/icon.png)
