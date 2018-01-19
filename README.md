@@ -4,3 +4,7 @@
 
 # PardusMuzik
 ![alt text](https://github.com/nrkdrk/PardusMuzik/blob/master/img/icon.png)
+
+# PardusMuzik
+Karşılama Sayfası
+![alt text](https://github.com/nrkdrk/PardusMuzik/blob/master/img/PardusMuzik.png)
