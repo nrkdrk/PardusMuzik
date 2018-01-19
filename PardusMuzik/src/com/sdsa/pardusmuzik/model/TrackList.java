@@ -5,13 +5,6 @@ import javafx.beans.property.SimpleIntegerProperty;
 import javafx.beans.property.SimpleStringProperty;
 import javafx.beans.property.StringProperty;
 
-/**
- * Model class for a TrackList.
- * 
- * @author Adrián Barrio Andrés
- * @email sdsa@gmail.com
- * @web https://sdsa.com
- */
 public class TrackList {
     
     private IntegerProperty id;

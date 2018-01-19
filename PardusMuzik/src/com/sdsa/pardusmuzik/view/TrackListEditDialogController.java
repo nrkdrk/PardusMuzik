@@ -14,13 +14,6 @@ import javafx.scene.control.Button;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.DirectoryChooser;
 
-/**
- * Dialog to edit details of a tracklist or add new one.
- *
- * @author Adrián Barrio Andrés
- * @email sdsa@gmail.com
- * @web https://sdsa.com
- */
 public class TrackListEditDialogController {
 
     @FXML

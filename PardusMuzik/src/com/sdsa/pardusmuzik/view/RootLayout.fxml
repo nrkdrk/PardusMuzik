@@ -5,4 +5,4 @@
 <?import javafx.scene.layout.*?>
 
 
-<BorderPane prefHeight="650.0" prefWidth="1040.0" stylesheets="@css/Trackio.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.sdsa.pardusmuzik.view.RootLayoutController" />
+<BorderPane prefHeight="650.0" prefWidth="1040.0" stylesheets="@css/PardusMuzik.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.sdsa.pardusmuzik.view.RootLayoutController" />

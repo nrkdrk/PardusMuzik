@@ -6,13 +6,6 @@ import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.scene.control.ListView;
 
-/**
- * Utilities to deal with Tracklists.
- *
- * @author Adrián Barrio Andrés
- * @email sdsa@gmail.com
- * @web https://sdsa.com
- */
 public class TrackListUtil {
 
     private static final String TRACKLIST_NODE = "pardusmuzik.tracklists";

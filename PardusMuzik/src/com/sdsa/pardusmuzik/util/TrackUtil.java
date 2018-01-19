@@ -14,7 +14,6 @@ import javafx.scene.control.TableView;
 import javafx.scene.image.Image;
 import javafx.scene.media.Media;
 
-
 public class TrackUtil {
     
     public static final List<String> SUPPORTED_FILE_EXTENSIONS = Arrays.asList(".mp3");

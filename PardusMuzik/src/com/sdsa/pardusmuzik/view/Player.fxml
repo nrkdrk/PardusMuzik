@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?import javafx.geometry.*?>
 <?import javafx.scene.*?>
 <?import javafx.scene.media.*?>
@@ -11,7 +10,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane prefHeight="650.0" prefWidth="1040.0" stylesheets="@css/Trackio.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.sdsa.pardusmuzik.view.PlayerController">
+<AnchorPane prefHeight="650.0" prefWidth="1040.0" stylesheets="@css/PardusMuzik.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.sdsa.pardusmuzik.view.PlayerController">
     <children>
         <SplitPane dividerPositions="0.35" focusTraversable="false" layoutX="183.0" layoutY="76.0" prefHeight="575.0" prefWidth="1040.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
             <items>
@@ -89,7 +88,7 @@
                   </ImageView>
                         <ImageView fx:id="trackioLogo" fitHeight="30.0" fitWidth="166.0" layoutX="8.0" layoutY="8.0" onMousePressed="#handleCredits" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="60.0" AnchorPane.rightAnchor="102.55101776123047" AnchorPane.topAnchor="15.0">
                             <image>
-                                <Image url="@img/logo-trackio.png" />
+                                <Image url="@img/logo-pardus.png" />
                             </image>
                         </ImageView>
                         <ProgressBar fx:id="progressBar" layoutX="15.0" layoutY="535.0" maxHeight="16.0" minHeight="6.0" prefHeight="16.0" prefWidth="210.0" progress="0.0" AnchorPane.bottomAnchor="99.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0">

@@ -1,9 +1,6 @@
 package com.sdsa.pardusmuzik;
 
-import java.awt.image.BufferedImage;
 import java.io.IOException;
-import java.net.URL;
-
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
@@ -16,10 +13,6 @@ import com.sdsa.pardusmuzik.model.TrackList;
 import com.sdsa.pardusmuzik.view.TrackListEditDialogController;
 import com.sdsa.pardusmuzik.view.PlayerController;
 import javafx.stage.StageStyle;
-
-import javax.imageio.ImageIO;
-
-import static com.sun.javafx.scene.control.skin.Utils.getResource;
 
 public class MainApp extends Application {
 
@@ -85,7 +78,7 @@ public class MainApp extends Application {
             e.printStackTrace();
         }
     }
-    
+
     /**
      * Opens a dialog to add or edit a tracklist details.
      *

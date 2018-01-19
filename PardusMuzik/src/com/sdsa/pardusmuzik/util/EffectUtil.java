@@ -13,13 +13,6 @@ import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
 import javafx.util.Duration;
 
-/**
- * Various utilities for applying different effects to nodes.
- *
- * @author Adrián Barrio Andrés
- * @email sdsa@gmail.com
- * @web https://sdsa.com
- */
 public class EffectUtil {
 
     private static double x;

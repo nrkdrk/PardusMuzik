@@ -4,14 +4,6 @@ import javafx.beans.property.SimpleStringProperty;
 import javafx.beans.property.StringProperty;
 import javafx.scene.image.Image;
 import javafx.scene.media.Media;
-
-/**
- * Model class for a Track.
- * 
- * @author Adrián Barrio Andrés
- * @email sdsa@gmail.com
- * @web https://sdsa.com
- */
 public class Track {
 
     private StringProperty fileName;

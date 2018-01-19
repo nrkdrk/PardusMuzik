@@ -39,13 +39,6 @@ import javafx.scene.text.TextAlignment;
 import javafx.stage.StageStyle;
 import javafx.util.Duration;
 
-/**
- * Player controller.
- *
- * @author Adrián Barrio Andrés
- * @email sdsa@gmail.com
- * @web https://sdsa.com
- */
 public class PlayerController {
     
     //Tracklists list
