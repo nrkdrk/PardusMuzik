@@ -3,6 +3,4 @@
 
 
 # PardusMuzik
-![alt text](https://github.com/nrkdrk/PardusMuzik/blob/master/img/logo-pardus.png)
-
 ![alt text](https://github.com/nrkdrk/PardusMuzik/blob/master/img/icon.png)
