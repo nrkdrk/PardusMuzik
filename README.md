@@ -61,7 +61,7 @@ Karşılama Sayfası
     }
 ```
 
-# handleNewTrackList
+# handleNewTrackList Method
 Kullanıcı 'Yeni Liste Oluştur'a tıklattığında çağrılır. Düzenlemek için bir iletişim kutusu açar.
 ```java
 @FXML
@@ -75,7 +75,7 @@ Kullanıcı 'Yeni Liste Oluştur'a tıklattığında çağrılır. Düzenlemek i
     }
 ```
 
-# showTrackListDetails 
+# showTrackListDetails Method
 Parça listesini parça listesinde göster
 ```java
 private void showTrackListDetails(TrackList trackList) {
@@ -88,4 +88,33 @@ private void showTrackListDetails(TrackList trackList) {
             TrackUtil.refreshTable(trackTableView);
         });
     }
+```
+
+# playTrack Method
+Parçayı oynatıcıda oynatma
+```java
+// Set next, current and previous track
+        currentTrack = track;
+        int totalTracks = observableTracksView.size();
+        int currentTrackNumber = observableTracksView.indexOf(currentTrack);
+        int nextTrackNumber = currentTrackNumber+1;
+        int prevTrackNumber = currentTrackNumber-1;
+        if(prevTrackNumber >= 0) prevTrack = observableTracksView.get(prevTrackNumber);
+        else prevTrack = observableTracksView.get(totalTracks-1);
+        if(nextTrackNumber < totalTracks) nextTrack = observableTracksView.get(nextTrackNumber);
+        else nextTrack = observableTracksView.get(0);
+        
+        // Set selected item in tracktable
+        trackTableView.getSelectionModel().select(currentTrack);
+        
+        // Play track and set media info
+        if (player != null) {
+            player.stop();
+            player = null;
+        }
+        currentMedia = currentTrack.getMedia();
+        player = new MediaPlayer(currentMedia);
+        player.play();
+        setCurrentlyPlaying(player);
+        setMediaInfo(currentTrack);
 ```
