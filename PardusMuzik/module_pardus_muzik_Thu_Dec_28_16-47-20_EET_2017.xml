@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="module_pardus_muzik" default="compile.module.pardus_muzik">
+  <dirname property="module.pardus_muzik.basedir" file="${ant.file.module_pardus_muzik}"/>
+  
+  <property name="module.jdk.home.pardus_muzik" value="${project.jdk.home}"/>
+  <property name="module.jdk.bin.pardus_muzik" value="${project.jdk.bin}"/>
+  <property name="module.jdk.classpath.pardus_muzik" value="${project.jdk.classpath}"/>
+  
+  <property name="compiler.args.pardus_muzik" value="-encoding UTF-8 -source 1.8 -target 1.8 ${compiler.args}"/>
+  
+  <property name="pardus_muzik.output.dir" value="${module.pardus_muzik.basedir}/out/production/Pardus_Muzik"/>
+  <property name="pardus_muzik.testoutput.dir" value="${module.pardus_muzik.basedir}/out/test/Pardus_Muzik"/>
+  
+  <path id="pardus_muzik.module.bootclasspath">
+    <!-- Paths to be included in compilation bootclasspath -->
+  </path>
+  
+  <path id="pardus_muzik.module.production.classpath">
+    <path refid="${module.jdk.classpath.pardus_muzik}"/>
+    <path refid="library.fontawesomefx-8.6.classpath"/>
+  </path>
+  
+  <path id="pardus_muzik.runtime.production.module.classpath">
+    <pathelement location="${pardus_muzik.output.dir}"/>
+    <path refid="library.fontawesomefx-8.6.classpath"/>
+  </path>
+  
+  <path id="pardus_muzik.module.classpath">
+    <path refid="${module.jdk.classpath.pardus_muzik}"/>
+    <pathelement location="${pardus_muzik.output.dir}"/>
+    <path refid="library.fontawesomefx-8.6.classpath"/>
+  </path>
+  
+  <path id="pardus_muzik.runtime.module.classpath">
+    <pathelement location="${pardus_muzik.testoutput.dir}"/>
+    <pathelement location="${pardus_muzik.output.dir}"/>
+    <path refid="library.fontawesomefx-8.6.classpath"/>
+  </path>
+  
+  
+  <patternset id="excluded.from.module.pardus_muzik">
+    <patternset refid="ignored.files"/>
+  </patternset>
+  
+  <patternset id="excluded.from.compilation.pardus_muzik">
+    <patternset refid="excluded.from.module.pardus_muzik"/>
+  </patternset>
+  
+  <path id="pardus_muzik.module.sourcepath">
+    <dirset dir="${module.pardus_muzik.basedir}">
+      <include name="src"/>
+    </dirset>
+  </path>
+  
+  
+  <target name="compile.module.pardus_muzik" depends="compile.module.pardus_muzik.production,compile.module.pardus_muzik.tests" description="Compile module Pardus_Muzik"/>
+  
+  <target name="compile.module.pardus_muzik.production" description="Compile module Pardus_Muzik; production classes">
+    <mkdir dir="${pardus_muzik.output.dir}"/>
+    <javac destdir="${pardus_muzik.output.dir}" debug="${compiler.debug}" nowarn="${compiler.generate.no.warnings}" memorymaximumsize="${compiler.max.memory}" fork="true" executable="${module.jdk.bin.pardus_muzik}/javac">
+      <compilerarg line="${compiler.args.pardus_muzik}"/>
+      <bootclasspath refid="pardus_muzik.module.bootclasspath"/>
+      <classpath refid="pardus_muzik.module.production.classpath"/>
+      <src refid="pardus_muzik.module.sourcepath"/>
+      <patternset refid="excluded.from.compilation.pardus_muzik"/>
+    </javac>
+    
+    <copy todir="${pardus_muzik.output.dir}">
+      <fileset dir="${module.pardus_muzik.basedir}/src">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+    </copy>
+  </target>
+  
+  <target name="compile.module.pardus_muzik.tests" depends="compile.module.pardus_muzik.production" description="compile module Pardus_Muzik; test classes" unless="skip.tests"/>
+  
+  <target name="clean.module.pardus_muzik" description="cleanup module">
+    <delete dir="${pardus_muzik.output.dir}"/>
+    <delete dir="${pardus_muzik.testoutput.dir}"/>
+  </target>
+</project>
